@@ -5,10 +5,10 @@ import Lights from './Lights'
 import IPhoneModel from './ModelPhone.jsx'
 import * as THREE from 'three'
 
-const ModelView = ({index,groupRef,gsapType,controlRef,setRotationSize,size,item}) => {
+const ModelView = ({index,groupRef,gsapType,controlRef,setRotationState,size,item}) => {
   return (
     <div>
-       <View className={`w-full h-[90vh] sm:h-screen  ${index==2} ? right-[-100%] : ''`} index={index} id={gsapType}>
+       <View className={`w-full h-[90vh] absolute sm:h-screen  ${index===2 ?'right-[-100%]': ''} `} index={index} id={gsapType}>
 
         <ambientLight intensity={0.3} />
         <PerspectiveCamera makeDefault position={[0,0,4]} />
