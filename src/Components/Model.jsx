@@ -60,7 +60,7 @@ useEffect(()=>{
                     <View.Port />
                  </Canvas>
             </div>
-            <div className='text-sm font-light text-center mx-auto w-full'>
+            <div className='text-sm font-light text-center mx-auto w-full mt-16 sm:mt-5'>
                 <p>{model.title}</p>
             </div>
             <div className='flex-center'>
